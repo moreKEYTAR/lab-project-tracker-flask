@@ -67,4 +67,4 @@ def show_project_details(title):
 
 if __name__ == "__main__":
     hackbright.connect_to_db(app)
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

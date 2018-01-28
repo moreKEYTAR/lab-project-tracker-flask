@@ -11,10 +11,13 @@
     </p>
     <p> Max Grade: {{ max_grade }}
     </p>
+    <ul>
     {% for github, grade in student_grades %}
-        Github: {{ github }},
+        <li>
+        Github: <a href="/student?github={{ github }}">{{ github }}</a>,
         Grade: {{ grade }}<br>
+        </li>
     {% endfor %}
-
+    </ul>
 </body>
 </html>
